@@ -1,0 +1,7 @@
+<p>quote-form works!</p>
+<form (ngSubmit)="onSubmit()">
+    <input type="text" name="text" [(ngModel)]="text" placeholder="Type quote here">
+    <input type="submit" value="Create quote">
+</form>
+
+{{text}}

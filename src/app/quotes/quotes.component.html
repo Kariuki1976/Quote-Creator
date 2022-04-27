@@ -1,0 +1,21 @@
+<div class="cont-1 container mt-5">
+    <div class="row">
+        <h3>Quotes section</h3>
+        <div class="col" *ngFor="let quote of quote; let i = index">
+            <div id="card-1" class="card">
+                <p class="m-4 lead">{{quote.quotes}} <span> by ~{{quote.author}}</span></p>
+                <div class="mx-4 col-4">
+                    <!-- <div class="card card-date">
+                        <p class="date">Posted</p>
+                    </div> -->
+
+                </div>
+                <div class="card-footer">
+                    <button class="btn m-4" (click)="upvote(i)"> <span>{{quote.upvotes}}</span>like</button>
+                    <button class="btn mx-3" (click)="downvote(i)">dislike<span>{{quote.downvotes}}</span></button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
